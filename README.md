@@ -18,8 +18,9 @@ The following shows the web application's appearance before and after the Genera
 
 ## Link
 
-Repo
-Website
+Repo: https://github.com/Coridane/passgen
+Website: https://coridane.github.io/passgen
+
 
 ## Reflections for Future Self (and the Grader)
 
