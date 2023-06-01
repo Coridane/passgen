@@ -1,12 +1,12 @@
 ## JavaScript: Password Generator
 
-This webpage allows an 8-128 character password to be generated around user requirements. After clicking Generate, the user will be presented with five questions. The first is for the length and the other four are confirmation of character types.
+This webpage allows a 8-128 character password to be generated based on specified requirements. After clicking Generate, the user will be presented with five questions. The first prompts for the password length and the other four are confirmation of character types.
 
-Validation is in place to enforce a minimum and maximum length. Validation is also in place to enforce that one of the four character types is chosen. This information will be displayed, but also written to the console.
+Validation is in place to enforce a minimum and maximum length and to enforce that one of the four character types is chosen. Once the password is generated, it is displayed, and written to the console.
 
-Beyond the scope of this, a Copy Password button will appear after the password is generated and it will copy the password to clipboard, and confirm the copy in an alert.
+Beyond the scope of this, a Copy Password button will appear after the password is generated and will copy the password to clipboard, with an alert to confirm the copy.
 
-The interface has been modified for multiple screen sizes.
+The interface has been modified for different screen sizes.
 
 ## Mock-Up
 
