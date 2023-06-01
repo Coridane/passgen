@@ -133,7 +133,7 @@ button[disabled] {
 }
 
 /* The read-only text area. */
-#password {
+#password-box {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -154,6 +154,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media queries for other screen sizes.*/
 @media (max-width: 690px) {
   .card {
     font-size: 14px;
@@ -175,7 +176,7 @@ button[disabled] {
     padding: 10px 29px;
   }
 
-  #password {
+  #password-box {
     font-size: 1rem;
   }
 }
@@ -201,7 +202,7 @@ button[disabled] {
     padding: 10px 30px;
   }
 
-  #password {
+  #password-box {
     font-size: 1rem;
   }
 }
@@ -233,7 +234,7 @@ button[disabled] {
     padding: 10px 30px;
   }
 
-  #password {
+  #password-box {
     font-size: 1rem;
   }
 }
@@ -289,7 +290,7 @@ button[disabled] {
     padding: 10px 30px;
   }
 
-  #password {
+  #password-box {
     font-size: 1rem;
   }
 }
@@ -303,7 +304,7 @@ button[disabled] {
     font-size: 10px;
   }
 
-  #password {
+  #password-box {
     font-size: 12px;
   }
 

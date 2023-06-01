@@ -91,8 +91,8 @@ for (var i=0; i < length; i++) {
 function startPrompt() {
 // Generate a password which starts with a series of prompts (generate function).
   var password = generate();
-// Select the box (password) and equate that to the output variable.
-  var output = document.querySelector("#password");
+// Select the box (password-box) and equate that to the output variable.
+  var output = document.querySelector('#password-box');
 // Output the value of the previous variable (var password).
   output.value = password;
 }
@@ -107,10 +107,10 @@ function showBtn(e) {
 
 // 
 function copyPassword() {
-  // Create variable called copyText which will represent the box (password).
-  var copyText = document.querySelector('#password');
+  // Create variable called copyText which will represent the password-box.
+  var copyText = document.querySelector('#password-box');
 
-// Select the text in the box (password).
+// Select the text in the password-box.
   copyText.select();
   copyText.setSelectionRange(0, 99999); // For mobile devices
 

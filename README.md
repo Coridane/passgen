@@ -1,100 +1,34 @@
-# 03 JavaScript: Password Generator
+## JavaScript: Password Generator
 
-## Your Task
+This webpage allows an 8-128 character password to be generated around user requirements. After clicking Generate, the user will be presented with five questions. The first is for the length and the other four are confirmation of character types.
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Validation is in place to enforce a minimum and maximum length. Validation is also in place to enforce that one of the four character types is chosen. This information will be displayed, but also written to the console.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+Beyond the scope of this, a Copy Password button will appear after the password is generated and it will copy the password to clipboard, and confirm the copy in an alert.
 
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+The interface has been modified for multiple screen sizes.
 
 ## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+The following shows the web application's appearance before and after the Generate process.
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+![mock before](./assets/images/mock1.png)
 
-## Grading Requirements
+![mock after](./assets/images/mock2.png)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Link
 
-This Challenge is graded based on the following criteria: 
+Repo
+Website
 
-### Technical Acceptance Criteria: 40%
+## Reflections for Future Self (and the Grader)
 
-* Satisfies all of the preceding acceptance criteria.
+This was my favorite assignment so far because I learned so much from this. At the beginning, I did not know where to start. I didn't know what to look up so I had to start at the finish line by finding a tutorial site that had code for a password generator. I studied that code, going line by line, to figure out how it worked, and learned so much.
 
-### Deployment: 32%
+The code to have a Copy Password button also took some work because the button has to appear AFTER the user hits Generate.
 
-* Application deployed at live URL.
+Lastly, I hit a milestone in my learning. There were lines of code that I didn't understand (I nicknamed them "mystery code"). I spent hours looking at it and then took Spencer's advice from class - I used console.log with just a piece of the mystery code to see what it was doing. I then added a ;little more code, rechecking the console, and continued. I did a lot of testing and eventually figured out that the mystery code was generating a random number with a random decimal between 0 and 1, multiplied times the length of my array of possible characters, rounded from decimal to whole, and then that was the index used to pull the first character of the password, and it did that over and over, until the loop ended (until the length was met).
 
-* Application loads with no errors.
+What I don't want to forget is that this was not only a milestone because it was a lot of work for my brain, but when I discovered what the code I didn't understand was doing, I also discovered what the code above it (the code I thought I understood) was ACTUALLY doing. I thought the if statements were randomly choosing the character when in fact they were adding the entire array of possible characters, and then the "no longer a mystery" code was randomly choosing from that, one index at a time.
 
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This was an awesome assignment.
