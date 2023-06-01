@@ -109,6 +109,25 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+/* The Copy button (active). */
+#copy {
+  border: none;
+  background-color: hsl(39, 100%, 50%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: block;
+  font-size: 22px;
+  line-height: 22px;  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 54px;
+  text-align: center;
+  cursor: pointer;
+  display: none;  
+}
+
 .float-right {
   float: right;
 }
@@ -136,10 +155,50 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
+  .card {
+    font-size: 14px;
+  }
+
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 12px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 29px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .card {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 16px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
   }
 
   #password {
@@ -151,4 +210,116 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+@media (max-width: 414px) {
+  .card {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 16px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 393px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 16px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 16px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .card {
+    font-size: 10px;
+  }
+
+  #password {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #copy {            
+    display: block;    
+    font-size: 12px;    
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+  }  
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <!-- Linking to .css file for styles. -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -26,11 +26,12 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" onclick="prompt" class="btn">Generate Password</button>
+          <button id="generate" onclick="prompt" class="btn">Generate Password</button>           
+          <button id="copy" onclick="copyPassword()">Copy Password</button> 
         </div>
       </div>
     </div>
     <!-- Linking to .js file to run javascript. -->
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
